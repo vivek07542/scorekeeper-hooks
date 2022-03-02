@@ -1,10 +1,11 @@
 import React from 'react'
 
-const GameCondition = (props) => {
+const GameCondition = ({play,inputHandler}) => {
     return (
         <div>
-             <p>Playing With : {props.play} </p>
-             <input type="number" onChange={props.inputHandler} value={props.play}/>
+            <p name="playingWithCondition">Playing With : {play}</p>
+            <label htmlFor='scoreCondition'>Score Condition</label>
+            <input type="text" name="scoreCondition" id="scoreCondition" onChange={inputHandler} value={play}/>
         </div>
     )
 }

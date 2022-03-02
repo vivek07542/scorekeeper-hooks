@@ -9,5 +9,4 @@ const Player = (props) => {
         </div>
     )
 }
-
-export default Player
+export default Player;
